@@ -5,7 +5,7 @@ This is a simple terminal application to implement Conway's classic [Game of Lif
 
 #### Functional Programming Approach
 The application was built using a functional programming approach, namely: 
-- pure functions are used for core game logic; and
+- pure functions are used for core game logic (although not perfectly, some still have side effects); and
 - the initial game data is immutable and flows through the game's functions to calculate and display new generations.
 
 #### Data Structure
