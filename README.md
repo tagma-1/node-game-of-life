@@ -39,3 +39,6 @@ By contrast, a programmer needs to be careful when using mutable data structures
 ### Usage
 When the application has loaded, press 1 and then enter to start the game. 
 
+### Next Steps / Improvements
+Although the application works, no tests (unit or integration) have been written yet. This would be an ideal next step. 
+
