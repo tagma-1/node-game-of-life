@@ -50,6 +50,7 @@ const boardTick = (currentBoard) => currentBoard.map((row, rowIndex) => {
     // a dead cell comes to life if it has exactly three neighbours (Rule 4)
     } else {
       if (liveNeighbourCount === 3) return true
+      return false
     } 
   })
 })
@@ -67,5 +68,9 @@ const runGame = (gameBoard) => {
 
 module.exports = {
   seedBoard,
-  runGame
+  runGame,
+  cellNeighbours,
+  createBoard,
+  boardTick
 }
+
