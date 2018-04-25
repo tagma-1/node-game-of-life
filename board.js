@@ -43,7 +43,7 @@ const boardTick = (currentBoard) => currentBoard.map((row, rowIndex) => {
   return row.map((cell, columnIndex) => {
     // count the number of live neighbours that board position has
     let liveNeighbourCount = cellNeighbours(rowIndex, columnIndex, currentBoard)
-    // the cell dies if it's alive and it has fewer than two neighbous, or more than three neighbours (Rules 1 & 3)
+    // the cell dies if it's alive and it has fewer than two neighbours, or more than three neighbours (Rules 1 & 3)
     if (cell) {
       if (liveNeighbourCount < 2 || liveNeighbourCount > 3) return false
       return true // otherwise, the cell remains alive
@@ -73,3 +73,4 @@ module.exports = {
   createBoard,
   boardTick
 }
+
